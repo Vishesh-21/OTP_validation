@@ -1,0 +1,1 @@
+I'm creating a form type OTP validation app using html,css,js and email service from emailjs. In this app, system create an OTP and send it to your given email address and the you can check the entered OTP is similar or not using the js .
