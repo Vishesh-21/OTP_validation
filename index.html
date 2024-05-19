@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Images/fav_icon.webp" type="image/x-icon">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="container step1">
+            <h1>OTP <br>Verification</h1>
+            <div id="imgAvt">
+                <img src="./Images/another_ig.png" id="anotherimg" alt="avtar_img" loading="lazy">
+            </div>
+            <p>You will receive an email with a <br>one-time password </p>
+            <input type="email" name="email" id="email" placeholder="Email address" autofocus required
+                onkeyup="valid(this.value)">
+            <button type="submit" class="nextBtn">
+                <h3>Next</h3>
+                <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" trigger="hover" colors="primary:#ffffff">
+                </lord-icon>
+            </button>
+        </div>
+
+        <div class="container step2">
+            <h1>OTP <br>Verification</h1>
+            <div id="anotherAvt">
+                <img src="./Images/userAvtar.png" id="avtImg" alt="avtar_img" loading="lazy">
+            </div>
+            <p>A one time password has been sent to <br><span id="verifyEmail"></span></p>
+            <p id="digit">Enter the your code</p>
+            <div id="otpForm">
+                <input type="number">
+                <input type="number" disabled>
+                <input type="number" disabled>
+                <input type="number" disabled>
+            </div>
+
+            <button type="submit" class="verifyBtn">
+                <h3>Verify</h3>
+                <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" trigger="hover" colors="primary:#ffffff">
+                </lord-icon>
+            </button>
+            <p id="inValid">Dont't receive the code ? <a href="javascript:void(0)">Try again</a></p>
+        </div>
+
+        <div class="container step3">
+            <h1>Congratulation</h1>
+            <h4>Welcome to home page</h4>
+            <div id="img">
+                <img src="./Images/success_img.png" alt="success image">
+            </div>
+
+            <h2>Thank You</h2>
+            <p>Your OTP Verification has been completed successfully</p>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
